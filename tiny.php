@@ -27,8 +27,8 @@ $use_auth = true;
 // Users: array('Username' => 'Password', 'Username2' => 'Password2', ...)
 // Generate secure password hash - https://tinyfilemanager.github.io/docs/pwd.html
 $auth_users = array(
-    'admin' => 'f9fe86c6d831b4d86940801dc380da55', //admin@123
-    'user' => 'f9fe86c6d831b4d86940801dc380da55' //12345
+    'admin' => '$2y$10$k7/wGH9sJU0vDBvcpNAImON15laBRrkM26mm6SZtqTUzSU7C5ofG2', //admin@123
+    'user' => '$2y$10$k7/wGH9sJU0vDBvcpNAImON15laBRrkM26mm6SZtqTUzSU7C5ofG2' //12345
 );
 
 // Readonly users
