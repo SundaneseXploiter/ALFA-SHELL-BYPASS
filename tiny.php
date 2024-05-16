@@ -3,7 +3,7 @@
 $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":false,"theme":"light"}';
 
 /**
- * H3K | Tiny File Manager V2.5.3
+ * SXR | Barudak Well Manager V2.5.3
  * @author CCP Programmers
  * @email ccpprogrammers@gmail.com
  * @github https://github.com/prasathmani/tinyfilemanager
@@ -14,7 +14,7 @@ $CONFIG = '{"lang":"en","error_reporting":false,"show_hidden":false,"hide_Cols":
 define('VERSION', '2.5.3');
 
 //Application Title
-define('APP_TITLE', 'Tiny File Manager');
+define('APP_TITLE', 'Barudak Well Manager');
 
 // --- EDIT BELOW CONFIGURATION CAREFULLY ---
 
@@ -28,7 +28,6 @@ $use_auth = true;
 // Generate secure password hash - https://tinyfilemanager.github.io/docs/pwd.html
 $auth_users = array(
     'admin' => '$2y$10$k7/wGH9sJU0vDBvcpNAImON15laBRrkM26mm6SZtqTUzSU7C5ofG2', //admin@123
-    'user' => '$2y$10$k7/wGH9sJU0vDBvcpNAImON15laBRrkM26mm6SZtqTUzSU7C5ofG2' //12345
 );
 
 // Readonly users
@@ -355,7 +354,7 @@ if ($use_auth) {
                                 <form class="form-signin" action="" method="post" autocomplete="off">
                                     <div class="mb-3">
                                        <div class="brand">
-                                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" M1008 width="100%" height="80px" viewBox="0 0 238.000000 140.000000" aria-label="H3K Tiny File Manager">
+                                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" M1008 width="100%" height="80px" viewBox="0 0 238.000000 140.000000" aria-label="SundaneseXploiter Barudak Well Manager">
                                                 <g transform="translate(0.000000,140.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
                                                     <path d="M160 700 l0 -600 110 0 110 0 0 260 0 260 70 0 70 0 0 -260 0 -260 110 0 110 0 0 600 0 600 -110 0 -110 0 0 -260 0 -260 -70 0 -70 0 0 260 0 260 -110 0 -110 0 0 -600z"/>
                                                     <path fill="#003500" d="M1008 1227 l-108 -72 0 -117 0 -118 110 0 110 0 0 110 0 110 70 0 70 0 0 -180 0 -180 -125 0 c-69 0 -125 -3 -125 -6 0 -3 23 -39 52 -80 l52 -74 73 0 73 0 0 -185 0 -185 -70 0 -70 0 0 115 0 115 -110 0 -110 0 0 -190 0 -190 181 0 181 0 109 73 108 72 1 181 0 181 -69 48 -68 49 68 50 69 49 0 249 0 248 -182 -1 -183 0 -107 -72z"/>
@@ -1602,7 +1601,7 @@ if (isset($_GET['help'])) {
             <div class="card-body">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
-                        <p><h3><a href="https://github.com/prasathmani/tinyfilemanager" target="_blank" class="app-v-title"> Tiny File Manager <?php echo VERSION; ?></a></h3></p>
+                        <p><h3><a href="https://github.com/prasathmani/tinyfilemanager" target="_blank" class="app-v-title"> Barudak Well Manager <?php echo VERSION; ?></a></h3></p>
                         <p>Author: Prasath Mani</p>
                         <p>Mail Us: <a href="mailto:ccpprogrammers@gmail.com">ccpprogrammers[at]gmail.com</a> </p>
                     </div>
@@ -2232,9 +2231,9 @@ $tableTheme = (FM_THEME == "dark") ? "text-white bg-dark table-dark" : "bg-white
                     <a href="javascript:document.getElementById('a-copy').click();" class="btn btn-small btn-outline-primary btn-2"><i class="fa fa-files-o"></i> <?php echo lng('Copy') ?> </a></li>
             </ul>
         </div>
-        <div class="col-3 d-none d-sm-block"><a href="https://tinyfilemanager.github.io" target="_blank" class="float-right text-muted">Tiny File Manager <?php echo VERSION; ?></a></div>
+        <div class="col-3 d-none d-sm-block"><a href="https://tinyfilemanager.github.io" target="_blank" class="float-right text-muted">Barudak Well Manager <?php echo VERSION; ?></a></div>
         <?php else: ?>
-            <div class="col-12"><a href="https://tinyfilemanager.github.io" target="_blank" class="float-right text-muted">Tiny File Manager <?php echo VERSION; ?></a></div>
+            <div class="col-12"><a href="https://tinyfilemanager.github.io" target="_blank" class="float-right text-muted">Barudak Well Manager <?php echo VERSION; ?></a></div>
         <?php endif; ?>
     </div>
 </form>
@@ -3487,7 +3486,7 @@ class FM_Zipper_Tar
         if (strlen($CONFIG)) {
             $data = fm_object_to_array(json_decode($CONFIG));
         } else {
-            $msg = 'Tiny File Manager<br>Error: Cannot load configuration';
+            $msg = 'Barudak Well Manager<br>Error: Cannot load configuration';
             if (substr($fm_url, -1) == '/') {
                 $fm_url = rtrim($fm_url, '/');
                 $msg .= '<br>';
@@ -3643,7 +3642,7 @@ global $lang, $root_url, $favicon_path;
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Web based File Manager in PHP, Manage your files efficiently and easily with Tiny File Manager">
+    <meta name="description" content="Web based File Manager in PHP, Manage your files efficiently and easily with Barudak Well Manager">
     <meta name="author" content="CCP Programmers">
     <meta name="robots" content="noindex, nofollow">
     <meta name="googlebot" content="noindex">
@@ -3716,7 +3715,7 @@ $isStickyNavBar = $sticky_navbar ? 'navbar-fixed' : 'navbar-normal';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Web based File Manager in PHP, Manage your files efficiently and easily with Tiny File Manager">
+    <meta name="description" content="Web based File Manager in PHP, Manage your files efficiently and easily with Barudak Well Manager">
     <meta name="author" content="CCP Programmers">
     <meta name="robots" content="noindex, nofollow">
     <meta name="googlebot" content="noindex">
@@ -4229,7 +4228,7 @@ function lng($txt) {
     global $lang;
 
     // English Language
-    $tr['en']['AppName']        = 'Tiny File Manager';      $tr['en']['AppTitle']           = 'File Manager';
+    $tr['en']['AppName']        = 'Barudak Well Manager';      $tr['en']['AppTitle']           = 'File Manager';
     $tr['en']['Login']          = 'Sign in';                $tr['en']['Username']           = 'Username';
     $tr['en']['Password']       = 'Password';               $tr['en']['Logout']             = 'Sign Out';
     $tr['en']['Move']           = 'Move';                   $tr['en']['Copy']               = 'Copy';
